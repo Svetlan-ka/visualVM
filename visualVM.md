@@ -1,4 +1,4 @@
-```
+```java
 (1) Please open 'ru.netology.JvmExperience' in VisualVm
 (2) 13:57:14.867997700: loading io.vertx
 (3) 13:57:16.161983: loaded 529 classes
@@ -16,5 +16,19 @@
 
 ```
 ***
+![metaspace](https://github.com/Svetlan-ka/visualVM/blob/main/metaspace.png?raw=true)
 
-![classes](путь к изображению)
+На графике представлена загрузка системных и программно указанных классов для работы программы. 
+
+***
+![classes](https://github.com/Svetlan-ka/visualVM/blob/main/classes.png?raw=true)
+
+На графике представлена выгрузка классов из указанных в запросе пакетов.
+
+
+***
+![heap](https://github.com/Svetlan-ka/visualVM/blob/main/heap.png?raw=true)
+
+(2, 4, 6): создание объектов _reflections_ в методе _loadToMetaspaceAllFrom_. \
+(9-14): создание новых объектов в методе _createSimpleObjects_.
+
